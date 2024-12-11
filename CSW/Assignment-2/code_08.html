@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Sticky Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            height: 2000px; 
+            background-image: url('https://via.placeholder.com/150'); 
+            background-repeat: repeat-x; 
+        }
+
+        /* Sticky navigation bar styles */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .encircled-image {
+            display: block;
+            margin: 50px auto;
+            width: 150px; 
+            height: 150px; 
+            border: 5px solid black; 
+            border-radius: 50%; 
+            outline: 5px dashed white; 
+            outline-offset: -10px; 
+        }
+
+        /* Styled text */
+        .styled-text {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwOfbpKwLRP91JD52SV4ptdAUSqhcFcFYjDg&s" alt="Encircled Image" class="encircled-image">
+
+<div class="styled-text">
+    <h1>Welcome to Our Page!</h1>
+    <p>This is an example of a page with an encircled image and a sticky navigation bar.</p>
+</div>
+
+</body>
+</html>

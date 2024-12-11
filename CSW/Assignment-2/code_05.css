@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+}
+
+.custom-list {
+    list-style-image: url('E:\\Ayush-9478\\CSW\\Assignment-2\\img\\SOA-PNG.png'); 
+    padding: 40px;  
+}
+
+.custom-list li {
+    margin-bottom: 10px;
+    background-repeat: no-repeat; 
+    background-position: 0 5px; 
+}

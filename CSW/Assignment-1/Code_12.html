@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Webpage with Special Attributes</title>
+</head>
+<body>
+
+    <p tabindex="2">This is the first paragraph, but it will be accessed second when using the Tab key (tabindex="2").</p>
+    
+    <p tabindex="1">This is the second paragraph, but it will be accessed first when using the Tab key (tabindex="1").</p>
+    
+    <p tabindex="3">This is the third paragraph. It will be accessed third when using the Tab key (tabindex="3").</p>
+    
+    <p tabindex="4" draggable="true" >
+        This is the fourth paragraph. It is both draggable and editable. 
+        Feel free to move or edit this text (tabindex="4").
+    </p>
+
+    <p contenteditable="true" >
+        This is the fourth paragraph. It is both draggable and editable. 
+        Feel free to move or edit this text (tabindex="4.0").
+    </p>
+    
+    <p tabindex="5">This is the fifth paragraph. It will be accessed last when using the Tab key (tabindex="5").</p>
+
+    <p>Press <strong>Alt + T</strong> (Windows):</p>
+    <a href="https://www.example.com" target="_blank" accesskey="t">Go to Example Website</a>
+
+</body>
+</html>

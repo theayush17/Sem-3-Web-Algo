@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Hover Effect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .image-container {
+            width: 300px;
+            height: 200px;
+            background-image: url('https://via.placeholder.com/300x200'); /* Initial background image */
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.3s; /* Smooth transition */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container" id="imageDiv">
+    Hover over me!
+</div>
+
+<script>
+    const imageDiv = document.getElementById('imageDiv');
+
+    imageDiv.addEventListener('mouseover', () => {
+        imageDiv.style.backgroundImage = "url('https://via.placeholder.com/300x200/ff5733/ffffff?text=Hovered!')"; // Change background on hover
+    });
+
+    imageDiv.addEventListener('mouseout', () => {
+        imageDiv.style.backgroundImage = "url('https://via.placeholder.com/300x200')"; // Reset to original background
+    });
+</script>
+
+</body>
+</html>

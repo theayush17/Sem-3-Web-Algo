@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outermost{
+            display: block;
+            border: 2px solid white;
+            color: green;
+            padding: 6px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outermost">
+        <div style="width: 400px;">
+            <ol>ol (grandparent)
+                <li>li (direct parent)
+                    <span>span</span>
+                </li>
+            </ol>
+        </div>
+        <div style="width: 400px;">
+            <p>p(direct parent)
+                <span>span</span>
+            </p>
+        </div>
+    </div>
+    <br>
+    <button>Delete the div element from the page</button>
+</body>
+<script>
+    $(document).ready(function () {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outermost{
+            display: block;
+            border: 2px solid white;
+            color: green;
+            padding: 6px;
+            margin: 20px;
+        }
+        .container {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outermost">
+        <div class="container">
+            <ol>ol (grandparent)
+                <li>li (direct parent)
+                    <span>span</span>
+                </li>
+            </ol>
+        </div>
+        <div class="container">
+            <p>p(direct parent)
+                <span>span</span>
+            </p>
+        </div>
+    </div>
+    <br>
+    <button id="delete-div">Delete the div element from the page</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('span').parent().css({'color':'blue'});
+            $('#delete-div').on('click', function() {
+                $('.outermost').remove();
+            });
+        })
+    </script>
+</body>
+</html>
+
+  

@@ -1,0 +1,17 @@
+.product-container {
+    width: 400px;
+    padding: 20px;
+    border: 10px solid #ccc;
+    margin: 15px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .product-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-container p {
+    margin: 10px 0;
+  }

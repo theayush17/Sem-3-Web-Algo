@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .special-div {
+            font-size: 24px;
+            color: #333; /* Default text color */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        img {
+            width: 150px; /* Adjust size as needed */
+            height: auto;
+            cursor: pointer; /* Change cursor on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="special-div">My Special Div</div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj2v4E2iPvJatF706yrZxm2Wc8IM47JNebFQ&s" alt="Sample Image" id="hoverImage">
+
+<script>
+    const image = document.getElementById('hoverImage');
+    const specialDiv = document.querySelector('.special-div');
+
+    image.addEventListener('mouseover', () => {
+        specialDiv.style.color = '#e74c3c'; // Change text color on hover
+    });
+
+    image.addEventListener('mouseout', () => {
+        specialDiv.style.color = '#333'; // Change back to default color
+    });
+</script>
+
+</body>
+</html>
